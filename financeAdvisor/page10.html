@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FinancePro Retirement Calculator</title>
+
+<link rel="stylesheet" href="page10.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>FinancePro</h1>
+<p>Retirement Planning Calculator</p>
+
+</header>
+
+
+<div class="container">
+
+<div class="calculator">
+
+<h2>Plan Your Retirement</h2>
+
+<label>Current Age</label>
+<input type="number" id="currentAge" placeholder="e.g. 30">
+
+<label>Retirement Age</label>
+<input type="number" id="retireAge" placeholder="e.g. 60">
+
+<label>Monthly Expenses (₹)</label>
+<input type="number" id="expenses" placeholder="e.g. 40000">
+
+<label>Expected Annual Return (%)</label>
+<input type="number" id="rate" placeholder="e.g. 10">
+
+<button onclick="calculateRetirement()">Calculate</button>
+
+</div>
+
+
+<div class="results">
+
+<h2>Retirement Summary</h2>
+
+<p>Years Left : <span id="yearsLeft">0</span></p>
+
+<p>Required Retirement Fund : ₹ <span id="corpus">0</span></p>
+
+<p>Monthly Investment Needed : ₹ <span id="monthlyInvest">0</span></p>
+
+</div>
+
+</div>
+
+
+<div class="chartBox">
+
+<canvas id="retirementChart"></canvas>
+
+</div>
+
+
+<script src="page10.js"></script>
+
+</body>
+
+</html>

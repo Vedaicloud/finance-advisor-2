@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FinancePro EMI Calculator</title>
+
+<link rel="stylesheet" href="page5.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>FinancePro</h1>
+<p>Loan EMI Calculator</p>
+
+</header>
+
+
+<div class="container">
+
+<div class="calculator">
+
+<h2>Calculate Loan EMI</h2>
+
+<label>Loan Amount (₹)</label>
+<input type="number" id="loanAmount" placeholder="e.g. 500000">
+
+<label>Interest Rate (%)</label>
+<input type="number" id="interestRate" placeholder="e.g. 8.5">
+
+<label>Loan Tenure (Years)</label>
+<input type="number" id="loanYears" placeholder="e.g. 5">
+
+<button onclick="calculateEMI()">Calculate EMI</button>
+
+</div>
+
+
+<div class="results">
+
+<h2>Loan Summary</h2>
+
+<p>Monthly EMI : ₹ <span id="emi">0</span></p>
+
+<p>Total Interest : ₹ <span id="interest">0</span></p>
+
+<p>Total Payment : ₹ <span id="totalPayment">0</span></p>
+
+</div>
+
+</div>
+
+
+<div class="chartBox">
+
+<canvas id="emiChart"></canvas>
+
+</div>
+
+<script src="page5.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FinancePro Tax Calculator</title>
+
+<link rel="stylesheet" href="page12.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>FinancePro</h1>
+<p>Income Tax Calculator</p>
+
+</header>
+
+
+<div class="container">
+
+<div class="calculator">
+
+<h2>Calculate Your Tax</h2>
+
+<label>Annual Income (₹)</label>
+<input type="number" id="income" placeholder="e.g. 800000">
+
+
+<h3>Select Tax Regime</h3>
+
+<div class="regime-selection">
+
+<div class="regime-card" onclick="selectRegime('old')">
+
+<img src="old-tax.png">
+
+<p>Old Tax Regime</p>
+
+</div>
+
+<div class="regime-card" onclick="selectRegime('new')">
+
+<img src="new-tax.png">
+
+<p>New Tax Regime</p>
+
+</div>
+
+</div>
+
+
+<button onclick="calculateTax()">Calculate Tax</button>
+
+</div>
+
+
+<div class="results">
+
+<h2>Tax Summary</h2>
+
+<p>Taxable Income : ₹ <span id="taxable">0</span></p>
+
+<p>Total Tax Payable : ₹ <span id="tax">0</span></p>
+
+</div>
+
+</div>
+
+
+<div class="chartBox">
+
+<canvas id="taxChart"></canvas>
+
+</div>
+
+
+<script src="page12.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FinancePro Budget Planner</title>
+
+<link rel="stylesheet" href="page6.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>FinancePro</h1>
+<p>Monthly Budget Planner</p>
+
+</header>
+
+
+<div class="container">
+
+<div class="planner">
+
+<h2>Enter Your Monthly Budget</h2>
+
+<label>Monthly Income (₹)</label>
+<input type="number" id="income">
+
+<label>Rent / Housing</label>
+<input type="number" id="rent">
+
+<label>Food / Groceries</label>
+<input type="number" id="food">
+
+<label>Transport</label>
+<input type="number" id="transport">
+
+<label>Bills / Utilities</label>
+<input type="number" id="bills">
+
+<label>Other Expenses</label>
+<input type="number" id="other">
+
+<button onclick="calculateBudget()">Calculate Budget</button>
+
+</div>
+
+
+<div class="results">
+
+<h2>Budget Summary</h2>
+
+<p>Total Expenses : ₹ <span id="expenses">0</span></p>
+
+<p>Remaining Balance : ₹ <span id="balance">0</span></p>
+
+<p id="status"></p>
+
+</div>
+
+</div>
+
+
+<div class="chartBox">
+
+<canvas id="budgetChart"></canvas>
+
+</div>
+
+<script src="page6.js"></script>
+
+</body>
+</html>

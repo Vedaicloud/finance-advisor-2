@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FinancePro SIP Calculator</title>
+
+<link rel="stylesheet" href="page4.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>FinancePro</h1>
+<p>SIP Investment Calculator</p>
+
+</header>
+
+
+<div class="container">
+
+<div class="calculator">
+
+<h2>Calculate Your SIP Returns</h2>
+
+<label>Monthly Investment (₹)</label>
+<input type="number" id="amount" placeholder="e.g. 5000">
+
+<label>Expected Annual Return (%)</label>
+<input type="number" id="rate" placeholder="e.g. 12">
+
+<label>Investment Period (Years)</label>
+<input type="number" id="years" placeholder="e.g. 10">
+
+<button onclick="calculateSIP()">Calculate</button>
+
+</div>
+
+
+<div class="results">
+
+<h2>Investment Summary</h2>
+
+<p>Total Invested : ₹ <span id="invested">0</span></p>
+
+<p>Wealth Gained : ₹ <span id="gain">0</span></p>
+
+<p>Total Value : ₹ <span id="total">0</span></p>
+
+</div>
+
+</div>
+
+
+<div class="chartBox">
+
+<canvas id="sipChart"></canvas>
+
+</div>
+
+<script src="page4.js"></script>
+
+</body>
+</html>
